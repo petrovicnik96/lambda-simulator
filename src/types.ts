@@ -1,4 +1,7 @@
-export type LambdaHandler = (event: LambdaEvent, context: LamdaContext) => Promise<any>;
+export type LambdaHandler = (
+    event: LambdaEvent,
+    context: LamdaContext
+) => Promise<any>;
 
 export interface LambdaEvent {
     path: string;
@@ -70,7 +73,7 @@ export interface Bet {
     amaount: string;
     odds: string;
     timestamp: string;
-    status: 'PENDING' | 'WON' | 'LOST' | 'CANCELED';
+    status: "PENDING" | "WON" | "LOST" | "CANCELED";
 }
 
 export interface GameResult {
