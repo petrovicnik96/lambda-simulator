@@ -4,7 +4,7 @@ import { logger } from "../utils/logger";
 import { users } from "./userRegistration";
 import { v4 as uuidv4 } from "uuid";
 
-const bets: Record<string, Bet> = {};
+export const bets: Record<string, Bet> = {};
 
 export const handler: LambdaHandler = async (event, context) => {
     logger.info("Place bet function invoked");

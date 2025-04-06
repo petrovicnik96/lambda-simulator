@@ -70,8 +70,8 @@ export interface Bet {
     betId: string;
     userId: string;
     gameId: string;
-    amount: string;
-    odds: string;
+    amount: number;
+    odds: number;
     timestamp: string;
     status: "PENDING" | "WON" | "LOST" | "CANCELED";
 }
